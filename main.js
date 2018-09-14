@@ -78,7 +78,7 @@ d3.queue()
         .append('path')
         .classed('county', true)
         .attr('d', path)
-        .attr('data-fips', d => d.properties.fpis )
+        .attr('data-fips', d => d.id )
         .attr('data-education', d => d.properties.bachelorsOrHigher)
         .attr('fill', d => color(d.properties.bachelorsOrHigher))
         .on('mouseover', d => {
